@@ -1,0 +1,1 @@
+Add these to "Javascript" inside the advanced tab of "Public pages".

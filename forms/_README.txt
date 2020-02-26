@@ -1,0 +1,1 @@
+This config has to be manually updated in the database.

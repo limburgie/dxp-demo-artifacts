@@ -1,0 +1,80 @@
+{
+	"availableLanguageIds": [
+		"en_US"
+	],
+	"defaultLanguageId": "en_US",
+	"fields": [
+		{
+			"label": {
+				"en_US": "Inhoud"
+			},
+			"predefinedValue": {
+				"en_US": ""
+			},
+			"style": {
+				"en_US": ""
+			},
+			"tip": {
+				"en_US": ""
+			},
+			"dataType": "html",
+			"fieldNamespace": "ddm",
+			"indexType": "text",
+			"localizable": true,
+			"name": "Inhoud",
+			"readOnly": false,
+			"repeatable": false,
+			"required": false,
+			"showLabel": true,
+			"type": "ddm-text-html"
+		},
+		{
+			"label": {
+				"en_US": "Afbeelding"
+			},
+			"predefinedValue": {
+				"en_US": ""
+			},
+			"style": {
+				"en_US": ""
+			},
+			"tip": {
+				"en_US": ""
+			},
+			"dataType": "image",
+			"fieldNamespace": "ddm",
+			"indexType": "text",
+			"localizable": true,
+			"name": "Afbeelding",
+			"readOnly": false,
+			"repeatable": false,
+			"required": false,
+			"showLabel": true,
+			"type": "ddm-image"
+		},
+		{
+			"label": {
+				"en_US": "Locatie"
+			},
+			"predefinedValue": {
+				"en_US": ""
+			},
+			"style": {
+				"en_US": ""
+			},
+			"tip": {
+				"en_US": ""
+			},
+			"dataType": "geolocation",
+			"fieldNamespace": "ddm",
+			"indexType": "keyword",
+			"localizable": false,
+			"name": "Locatie",
+			"readOnly": false,
+			"repeatable": false,
+			"required": false,
+			"showLabel": true,
+			"type": "ddm-geolocation"
+		}
+	]
+}

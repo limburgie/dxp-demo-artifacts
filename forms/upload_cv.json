@@ -1,0 +1,198 @@
+{
+	"availableLanguageIds": [
+		"nl_NL",
+		"en_US"
+	],
+	"successPage": {
+		"body": {
+			"en_US": "We hebben je informatie goed ontvangen en nemen zo snel mogelijk contact met je op!"
+		},
+		"title": {
+			"en_US": "Bedankt!"
+		},
+		"enabled": true
+	},
+	"defaultLanguageId": "en_US",
+	"fields": [
+		{
+			"autocomplete": false,
+			"ddmDataProviderInstanceId": "[]",
+			"dataType": "string",
+			"predefinedValue": {
+				"en_US": "",
+				"nl_NL": ""
+			},
+			"tooltip": {
+				"en_US": "",
+				"nl_NL": ""
+			},
+			"readOnly": false,
+			"label": {
+				"en_US": "Naam",
+				"nl_NL": "Naam"
+			},
+			"type": "text",
+			"required": false,
+			"showLabel": true,
+			"displayStyle": "singleline",
+			"fieldNamespace": "",
+			"indexType": "keyword",
+			"visibilityExpression": "",
+			"ddmDataProviderInstanceOutput": "[]",
+			"repeatable": false,
+			"name": "Naam",
+			"options": [
+				{
+					"label": {
+						"en_US": "Option",
+						"nl_NL": "Option"
+					},
+					"value": "Option"
+				}
+			],
+			"localizable": true,
+			"tip": {
+				"en_US": "",
+				"nl_NL": ""
+			},
+			"placeholder": {
+				"en_US": "",
+				"nl_NL": ""
+			},
+			"dataSourceType": "manual"
+		},
+		{
+			"autocomplete": false,
+			"ddmDataProviderInstanceId": "[]",
+			"dataType": "string",
+			"predefinedValue": {
+				"en_US": "",
+				"nl_NL": ""
+			},
+			"tooltip": {
+				"en_US": "",
+				"nl_NL": ""
+			},
+			"readOnly": false,
+			"label": {
+				"en_US": "E-mailadres",
+				"nl_NL": "E-mailadres"
+			},
+			"type": "text",
+			"required": false,
+			"showLabel": true,
+			"displayStyle": "singleline",
+			"fieldNamespace": "",
+			"indexType": "keyword",
+			"visibilityExpression": "",
+			"ddmDataProviderInstanceOutput": "[]",
+			"repeatable": false,
+			"name": "Emailadres",
+			"options": [
+				{
+					"label": {
+						"en_US": "Option",
+						"nl_NL": "Option"
+					},
+					"value": "Option"
+				}
+			],
+			"localizable": true,
+			"tip": {
+				"en_US": "",
+				"nl_NL": ""
+			},
+			"placeholder": {
+				"en_US": "",
+				"nl_NL": ""
+			},
+			"dataSourceType": "manual",
+			"validation": {
+				"expression": {
+					"name": "email",
+					"value": "isEmailAddress(Emailadres)"
+				},
+				"parameter": {
+					"en_US": "",
+					"nl_NL": ""
+				},
+				"errorMessage": {
+					"en_US": "Geen geldig e-mailadres",
+					"nl_NL": ""
+				}
+			}
+		},
+		{
+			"autocomplete": false,
+			"ddmDataProviderInstanceId": "[]",
+			"dataType": "string",
+			"predefinedValue": {
+				"en_US": "",
+				"nl_NL": ""
+			},
+			"tooltip": {
+				"en_US": "",
+				"nl_NL": ""
+			},
+			"readOnly": false,
+			"label": {
+				"en_US": "Motivatie",
+				"nl_NL": "Motivatie"
+			},
+			"type": "text",
+			"required": false,
+			"showLabel": true,
+			"displayStyle": "multiline",
+			"fieldNamespace": "",
+			"indexType": "keyword",
+			"visibilityExpression": "",
+			"ddmDataProviderInstanceOutput": "[]",
+			"repeatable": false,
+			"name": "Motivatie",
+			"options": [
+				{
+					"label": {
+						"en_US": "Option",
+						"nl_NL": "Option"
+					},
+					"value": "Option"
+				}
+			],
+			"localizable": true,
+			"tip": {
+				"en_US": "",
+				"nl_NL": ""
+			},
+			"placeholder": {
+				"en_US": "",
+				"nl_NL": ""
+			},
+			"dataSourceType": "manual"
+		},
+		{
+			"dataType": "string",
+			"predefinedValue": {
+				"en_US": "",
+				"nl_NL": ""
+			},
+			"readOnly": false,
+			"label": {
+				"en_US": "CV",
+				"nl_NL": "CV"
+			},
+			"type": "document_library",
+			"required": false,
+			"showLabel": true,
+			"fieldNamespace": "",
+			"indexType": "keyword",
+			"visibilityExpression": "",
+			"repeatable": false,
+			"name": "CV",
+			"localizable": true,
+			"tip": {
+				"en_US": "",
+				"nl_NL": ""
+			}
+		}
+	]
+}
