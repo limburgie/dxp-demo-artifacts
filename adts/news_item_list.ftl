@@ -5,10 +5,6 @@
         <#if !themeDisplay.isSignedIn()>
             ${renderRequest.setAttribute("PORTLET_CONFIGURATOR_VISIBILITY", true)}
         </#if>
-
-		<div class="alert alert-info">
-			Geen nieuwsberichten gevonden.
-		</div>
     </#if>
 
     <#list entries as entry>

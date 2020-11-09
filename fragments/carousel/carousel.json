@@ -1,0 +1,24 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "name": "steps",
+          "label": "Steps",
+          "description": "Number of steps in carousel",
+          "dataType": "int",
+          "type": "select",
+          "typeOptions": {
+            "validValues": [
+              {"value": "2"},
+              {"value": "3"},
+              {"value": "4"},
+              {"value": "5"}
+            ]
+          },
+          "defaultValue": "3"
+        }
+      ]
+    }
+  ]
+}
