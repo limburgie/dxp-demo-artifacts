@@ -6,7 +6,7 @@
 	"fields": [
 		{
 			"label": {
-				"en_US": "Inhoud"
+				"en_US": "Body"
 			},
 			"predefinedValue": {
 				"en_US": ""
@@ -21,7 +21,7 @@
 			"fieldNamespace": "ddm",
 			"indexType": "text",
 			"localizable": true,
-			"name": "Inhoud",
+			"name": "Body",
 			"readOnly": false,
 			"repeatable": false,
 			"required": false,
@@ -30,7 +30,7 @@
 		},
 		{
 			"label": {
-				"en_US": "Afbeelding"
+				"en_US": "Feature image"
 			},
 			"predefinedValue": {
 				"en_US": ""
@@ -45,36 +45,12 @@
 			"fieldNamespace": "ddm",
 			"indexType": "text",
 			"localizable": true,
-			"name": "Afbeelding",
+			"name": "FeatureImage",
 			"readOnly": false,
 			"repeatable": false,
 			"required": false,
 			"showLabel": true,
 			"type": "ddm-image"
-		},
-		{
-			"label": {
-				"en_US": "Locatie"
-			},
-			"predefinedValue": {
-				"en_US": ""
-			},
-			"style": {
-				"en_US": ""
-			},
-			"tip": {
-				"en_US": ""
-			},
-			"dataType": "geolocation",
-			"fieldNamespace": "ddm",
-			"indexType": "keyword",
-			"localizable": false,
-			"name": "Locatie",
-			"readOnly": false,
-			"repeatable": false,
-			"required": false,
-			"showLabel": true,
-			"type": "ddm-geolocation"
 		}
 	]
 }
