@@ -1,3 +1,0 @@
-.teaser-card a:not(.btn)::after {
-    content: " →";
-}

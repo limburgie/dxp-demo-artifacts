@@ -1,0 +1,52 @@
+<!--
+Lexicon icons: http://pat270.github.io/lexicon/v2.10.0/content/icons-lexicon
+Line Awesome icons: https://icons8.com/line-awesome
+-->
+
+[#switch configuration.library!'Lexicon']
+  [#case "Line Awesome"]
+		[#switch configuration.type!'Regular']
+			[#case "Solid"]
+				[#assign prefix = "s"]
+				[#break]
+			[#case "Brand"]
+				[#assign prefix = "b"]
+				[#break]
+			[#default]
+				[#assign prefix = "r"]
+				[#break]
+		[/#switch]
+		<i class="la${prefix} la-${configuration.icon}" style="font-size: ${configuration.size!1}rem"></i>
+		[#break]
+	[#case "Font Awesome"]
+		[#switch configuration.type!'Regular']
+			[#case "Solid"]
+				[#assign prefix = "s"]
+				[#break]
+			[#case "Brand"]
+				[#assign prefix = "b"]
+				[#break]
+			[#default]
+				[#assign prefix = "r"]
+				[#break]
+		[/#switch]
+		<i class="fa${prefix} fa-${configuration.icon}" style="font-size: ${configuration.size!1}rem"></i>
+		[#break]
+	[#case "Remix Icon"]
+		[#assign className = "ri-${configuration.icon}"]
+		[#switch configuration.type!'Regular']
+			[#case "Solid"]
+				[#assign suffix = "fill"]
+				[#break]
+			[#default]
+				[#assign suffix = "line"]
+				[#break]
+		[/#switch]
+		<i class="ri-${configuration.icon}-${suffix}" style="font-size: ${configuration.size!1}rem"></i>
+		[#break]
+	[#default]
+  	<svg class="lexicon-icon lexicon-icon-${configuration.icon}" style="font-size: ${configuration.size!1}rem" role="presentation">
+			<use xlink:href="http://localhost:8080/o/admin-theme/images/clay/icons.svg#${configuration.icon}"></use>
+		</svg>
+    [#break]
+[/#switch]

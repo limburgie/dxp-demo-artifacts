@@ -1,0 +1,51 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+				{
+					"name": "library",
+					"label": "Library",
+					"type": "select",
+					"dataType": "string",
+					"typeOptions": {
+						"validValues": [
+							{"value": "Lexicon"},
+							{"value": "Font Awesome"},
+							{"value": "Line Awesome"},
+							{"value": "Remix Icon"}
+						]
+					},
+					"defaultValue": "Lexicon"
+				},
+				{
+					"name": "type",
+					"label": "Type",
+					"type": "select",
+					"dataType": "string",
+					"typeOptions": {
+						"validValues": [
+							{"value": "Regular"},
+							{"value": "Solid"},
+							{"value": "Brand"}
+						]
+					},
+					"defaultValue": "Regular"
+				},
+				{
+					"name": "icon",
+					"label": "Icon",
+					"type": "text",
+					"dataType": "string",
+					"defaultValue": "home"
+				},	
+				{
+					"name": "size",
+					"label": "Size",
+					"type": "text",
+					"dataType": "int",
+					"defaultValue": "1"
+				}
+      ]
+    }
+  ]
+}

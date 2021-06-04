@@ -1,0 +1,16 @@
+[#assign currentPage = themeDisplay.layout]
+[#assign ancestors = [currentPage] + currentPage.ancestors]
+
+[#if configuration.level gte 0 && configuration.level lt ancestors?size]
+	[#if configuration.relative]
+		[#assign page = ancestors[configuration.level]]
+	[#else]
+		[#assign page = ancestors[ancestors?size - 1 - configuration.level]]
+	[/#if]
+[/#if]
+
+[#if page??]
+	<h2>
+		${page.getName(locale)}
+	</h2>
+[/#if]

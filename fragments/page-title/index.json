@@ -1,0 +1,21 @@
+{
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "name": "level",
+                    "label": "Level",
+                    "type": "text",
+                    "dataType": "int",
+                    "defaultValue": "0"
+                },
+								{
+                    "name": "relative",
+                    "label": "Relative",
+                    "type": "checkbox",
+                    "defaultValue": true
+                }
+            ]
+        }
+    ]
+}

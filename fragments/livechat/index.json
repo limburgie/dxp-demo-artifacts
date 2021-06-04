@@ -1,0 +1,17 @@
+{
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "name": "license",
+                    "label": "License key",
+                    "type": "text",
+                    "typeOptions": {
+                        "placeholder": "12345678"
+                    },
+                    "dataType": "string"
+                }
+            ]
+        }
+    ]
+}

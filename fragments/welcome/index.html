@@ -1,0 +1,11 @@
+<div class="fragment_102">
+	<h1>
+		Goedemiddag,
+	</h1>
+	<h1 style="font-size: 3em; color: var(--primary)">
+		${user.fullName}
+	</h1>
+	[#if user.organizations?has_content]
+		<img style="width: 100px; margin-top: 20px" src="/image/layout_set_logo?img_id=${user.organizations[0].logoId}"/>
+	[/#if]
+</div>
