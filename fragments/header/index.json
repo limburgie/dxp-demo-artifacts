@@ -1,0 +1,32 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "name": "showSiteName",
+          "label": "Show site name",
+          "type": "checkbox",
+          "defaultValue": false
+        },
+        {
+          "name": "showNavigation",
+          "label": "Show navigation",
+          "type": "checkbox",
+          "defaultValue": true
+        },
+        {
+          "name": "showProfile",
+          "label": "Show profile",
+          "type": "checkbox",
+          "defaultValue": true
+        },
+        {
+          "name": "showSearch",
+          "label": "Show search",
+          "type": "checkbox",
+          "defaultValue": true
+        },
+      ]
+    }
+  ]
+}

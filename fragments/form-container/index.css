@@ -1,0 +1,23 @@
+.form-container .ddm-form-name {
+	display: none;
+}
+
+.form-container .portlet-forms-display .col-md-12.col-ddm {
+  padding: 0 12px !important;
+}
+.form-container .portlet-forms-display h1.ddm-form-name {
+  padding: 20px 12px 30px !important;
+}
+.form-container .portlet-forms-display h2.lfr-ddm-form-page-title,
+.form-container .portlet-forms-display .lfr-ddm-form-container .lfr-ddm-form-pagination-controls,
+.form-container .portlet-forms-display .ddm-form-description {
+  padding: 12px !important;
+}
+.form-container .portlet-forms-display .ddm-user-view-content .multi-step-item.active .multi-step-divider,
+.form-container .portlet-forms-display .multi-step-item.active .multi-step-icon,
+.form-container .portlet-forms-display .nav-underline .tab.active a.multi-step-item .multi-step-icon {
+  background-color: #F27920;
+}
+.form-container .portlet-forms-display .multi-step-indicator-label {
+  display: none;
+}

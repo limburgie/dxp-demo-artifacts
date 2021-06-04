@@ -1,0 +1,76 @@
+[#assign logoUrl = themeDisplay.companyLogo]
+[#if themeDisplay.layoutSetLogo??]
+[#assign logoUrl = themeDisplay.layoutSetLogo]
+[/#if]
+
+<header id="banner">
+	<div class="navbar navbar-classic navbar-top py-3">
+		<div class="container user-personal-bar">
+			<div class="align-items-center autofit-row">
+				<a class="logo custom-logo align-items-center d-md-inline-flex d-sm-none d-none logo-md" href="/" title="Go to ">
+					<img alt="" class="mr-2" height="56" src="${logoUrl}" />
+
+					[#if configuration.showSiteName!false]
+					<h2 class="font-weight-bold h2 mb-0 text-dark" role="heading" aria-level="1">${themeDisplay.siteGroupName}</h2>
+					[/#if]
+				</a>
+
+
+				<div class="autofit-col autofit-col-expand">
+					<div class="justify-content-md-end mr-4 navbar-form" role="search">
+						[#if configuration.showSearch!true]
+						[@searchPortlet/]
+						[/#if]
+					</div>
+				</div>
+
+				<div class="autofit-col">
+					[#if configuration.showProfile!true]
+					[@profilePortlet/]
+					[/#if]
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="navbar navbar-classic navbar-expand-md navbar-light pb-3">
+		<div class="container">
+			<a class="logo custom-logo align-items-center d-inline-flex d-md-none logo-xs" href="/" rel="nofollow">
+				<img alt="" class="mr-2" height="56" src="${logoUrl}" />
+
+				[#if configuration.showSiteName!false]
+				<h2 class="font-weight-bold h2 mb-0 text-dark">${themeDisplay.siteGroupName}</h2>
+				[/#if]
+			</a>
+
+			<button aria-controls="navigationCollapse" aria-expanded="false" class="navbar-toggler navbar-toggler-right" data-target="#navCollapse" data-toggle="liferay-collapse" type="button">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div aria-expanded="false" class="navbar-collapse collapse" id="navCollapse">
+				[#if configuration.showNavigation!false]
+				[@navigationPortlet/]
+				[/#if]
+			</div>
+		</div>
+	</div>
+</header>
+
+[#macro searchPortlet]
+[@liferay_portlet["runtime"]
+portletName="com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet"
+/]
+[/#macro]
+
+[#macro navigationPortlet]
+[@liferay_portlet["runtime"]
+portletName="com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet"
+instanceId="abcd"
+/]
+[/#macro]
+
+[#macro profilePortlet]
+[@liferay_portlet["runtime"]
+portletName="com_liferay_product_navigation_user_personal_bar_web_portlet_ProductNavigationUserPersonalBarPortlet"
+/]
+[/#macro]

@@ -1,0 +1,16 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "name": "steps",
+          "label": "Steps",
+          "description": "Number of steps in carousel",
+					"type": "text",
+          "dataType": "int",
+          "defaultValue": "3"
+        }
+      ]
+    }
+  ]
+}

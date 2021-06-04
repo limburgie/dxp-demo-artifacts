@@ -1,0 +1,111 @@
+{
+    "fieldSets": [
+        {
+            "fields": [
+							{
+                    "name": "type",
+                    "label": "Type",
+                    "type": "select",
+                    "dataType": "string",
+                    "typeOptions": {
+                        "validValues": [
+                            {"value": "line"},
+                            {"value": "bar"},
+                            {"value": "radar"},
+													{"value": "doughnut"},
+													{"value": "pie"}
+                        ]
+                    },
+                    "defaultValue": "line"
+                },
+              {
+                    "name": "values",
+                    "label": "Values",
+                    "type": "text",
+                    "typeOptions": {
+                        "placeholder": "10,30,20"
+                    },
+                    "dataType": "string",
+                    "defaultValue": "10,30,20"
+                },
+							 {
+                    "name": "labels",
+                    "label": "Labels",
+                    "type": "text",
+                    "typeOptions": {
+                        "placeholder": "Jan,Feb,Mar"
+                    },
+                    "dataType": "string",
+                    "defaultValue": ""
+                },
+							{
+                    "name": "height",
+                    "label": "Height",
+                    "type": "text",
+                    "dataType": "int",
+                    "defaultValue": "200"
+                },
+							{
+                    "name": "color1",
+                    "label": "Color 1",
+                    "type": "colorPalette",
+                    "dataType": "object",
+                    "defaultValue": {
+                        "cssClass": "primary",
+                        "rgbValue": "rgb(57,90,166)"
+                    }
+                },
+							{
+                    "name": "color2",
+                    "label": "Color 2",
+                    "type": "colorPalette",
+                    "dataType": "object",
+                    "defaultValue": {
+                        "cssClass": "primary",
+                        "rgbValue": "rgb(57,90,166)"
+                    }
+                },
+							{
+                    "name": "color3",
+                    "label": "Color 3",
+                    "type": "colorPalette",
+                    "dataType": "object",
+                    "defaultValue": {
+                        "cssClass": "primary",
+                        "rgbValue": "rgb(57,90,166)"
+                    }
+                },
+							{
+                    "name": "color4",
+                    "label": "Color 4",
+                    "type": "colorPalette",
+                    "dataType": "object",
+                    "defaultValue": {
+                        "cssClass": "primary",
+                        "rgbValue": "rgb(57,90,166)"
+                    }
+                },
+							{
+                    "name": "color5",
+                    "label": "Color 5",
+                    "type": "colorPalette",
+                    "dataType": "object",
+                    "defaultValue": {
+                        "cssClass": "primary",
+                        "rgbValue": "rgb(57,90,166)"
+                    }
+                },
+							{
+                    "name": "color6",
+                    "label": "Color 6",
+                    "type": "colorPalette",
+                    "dataType": "object",
+                    "defaultValue": {
+                        "cssClass": "primary",
+                        "rgbValue": "rgb(57,90,166)"
+                    }
+                },
+            ]
+        }
+    ]
+}

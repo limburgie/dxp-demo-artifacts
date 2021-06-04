@@ -1,0 +1,113 @@
+ul.who-is-who {
+    margin: 32px 0;
+    padding: 0; }
+    ul.who-is-who li {
+      margin: 16px 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      border-bottom: 1px solid #E5E5E5; }
+      ul.who-is-who li div.who-is-who__person {
+        flex-shrink: 1;
+        width: 350px; }
+        ul.who-is-who li div.who-is-who__person div.who-is-who__profile {
+          width: fit-content;
+          padding: 16px 32px 16px 16px;
+          color: #000000;
+          font-weight: 100;
+          font-size: 18px;
+          clip-path: polygon(0 0, 100% 0, calc(100% - 16px) 100%, 0 100%);
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          ul.who-is-who li div.who-is-who__person div.who-is-who__profile div.who-is-who__image {
+            position: relative;
+            height: 50px;
+            width: 50px;
+            margin: 0 16px 0 4px;
+            border-radius: 100px;
+            background-position: center;
+            background-size: cover; }
+          ul.who-is-who li div.who-is-who__person div.who-is-who__profile div.who-is-who__function {
+            font-size: 14px; }
+          ul.who-is-who li div.who-is-who__person div.who-is-who__profile div.who-is-who__name {
+            font-size: 24px;
+            font-weight: 400; }
+          ul.who-is-who li div.who-is-who__person div.who-is-who__profile div.who-is-who__image-border {
+            border-radius: 100%;
+            border: solid 1px #E0B947;
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            width: calc(100% + 8px);
+            height: calc(100% + 8px); }
+        ul.who-is-who li div.who-is-who__person div.who-is-who__description {
+          font-size: 14px;
+          margin: 16px;
+          display: none; }
+      ul.who-is-who li div.who-is-who__info {
+        flex-grow: 1; }
+        ul.who-is-who li div.who-is-who__info.who-is-who__info--minimum {
+          display: flex; }
+        ul.who-is-who li div.who-is-who__info.who-is-who__info--maximum {
+          display: none; }
+        ul.who-is-who li div.who-is-who__info table {
+          margin: 8px 32px; }
+          ul.who-is-who li div.who-is-who__info table tr {
+            border-bottom: 1px solid #E5E5E5;
+            display: block; }
+            ul.who-is-who li div.who-is-who__info table tr:last-child {
+              border: 0; }
+          ul.who-is-who li div.who-is-who__info table td {
+            margin-bottom: 4px;
+            padding: 15px 8px 15px 0; }
+            ul.who-is-who li div.who-is-who__info table td i {
+              top: 2px;
+              position: relative; }
+            ul.who-is-who li div.who-is-who__info table td.heading {
+              font-weight: 600;
+              color: #676767; }
+            ul.who-is-who li div.who-is-who__info table td a {
+              color: #000000;
+              /*text-decoration: underline;*/ }
+              ul.who-is-who li div.who-is-who__info table td a:hover, ul.who-is-who li div.who-is-who__info table td a:active, ul.who-is-who li div.who-is-who__info table td a:focus, ul.who-is-who li div.who-is-who__info table td a.active {
+                color: #E0B947; }
+        ul.who-is-who li div.who-is-who__info *.ms-teams {
+          display: flex;
+          flex-direction: row;
+          background: #F4F4F4;
+          padding: 0 16px;
+          border-radius: 100px; }
+          ul.who-is-who li div.who-is-who__info *.ms-teams span.ms-steams__status {
+            border-radius: 100px;
+            width: 8px;
+            height: 8px;
+            margin: 8px 8px 8px 0; }
+            ul.who-is-who li div.who-is-who__info *.ms-teams span.ms-steams__status.ms-steams__status--active {
+              background-color: #91C452; }
+            ul.who-is-who li div.who-is-who__info *.ms-teams span.ms-steams__status.ms-steams__status--inactive {
+              background-color: #C4314B; }
+      ul.who-is-who li div.who-is-who__actions button {
+        background: none;
+        border: 0;
+        color: #000000;
+        font-size: 20px; padding-top: 20px }
+        ul.who-is-who li div.who-is-who__actions button:hover, ul.who-is-who li div.who-is-who__actions button:active, ul.who-is-who li div.who-is-who__actions button:focus, ul.who-is-who li div.who-is-who__actions button.active {
+          color: #E0B947; }
+        ul.who-is-who li div.who-is-who__actions button.who-is-who__open {
+          display: block; }
+        ul.who-is-who li div.who-is-who__actions button.who-is-who__close {
+          display: none; }
+      ul.who-is-who li.open div.who-is-who__profile {
+        background-color: #F4F4F4; }
+      ul.who-is-who li.open div.who-is-who__description {
+        display: block !important; }
+      ul.who-is-who li.open div.who-is-who__info.who-is-who__info--minimum {
+        display: none; }
+      ul.who-is-who li.open div.who-is-who__info.who-is-who__info--maximum {
+        display: flex; }
+      ul.who-is-who li.open button.who-is-who__open {
+        display: none !important; }
+      ul.who-is-who li.open button.who-is-who__close {
+        display: block !important; }

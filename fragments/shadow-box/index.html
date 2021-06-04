@@ -1,0 +1,8 @@
+[#assign bg = '#fff']
+[#if configuration.backgroundColor??]
+	[#assign bg = configuration.backgroundColor.rgbValue]
+[/#if]
+
+<div class="shadowbox" style="background: ${bg}">
+	<lfr-drop-zone></lfr-drop-zone>
+</div>

@@ -1,0 +1,49 @@
+{
+    "fieldSets": [
+        {
+            "fields": [
+							{
+                    "name": "backgroundColor",
+                    "label": "Background color",
+                    "type": "select",
+                    "dataType": "string",
+                    "typeOptions": {
+                        "validValues": [
+                            {"value": "primary"},
+                            {"value": "secondary"},
+                            {"value": "link"}
+                        ]
+                    },
+                    "defaultValue": "primary"
+                },
+                {
+                    "name": "size",
+                    "label": "Size",
+                    "type": "select",
+                    "dataType": "string",
+                    "typeOptions": {
+                        "validValues": [
+                            {"value": "Small"},
+                            {"value": "Normal"},
+                            {"value": "Large"}
+                        ]
+                    },
+                    "defaultValue": "Normal"
+                },
+							{
+                    "name": "width",
+                    "label": "Width",
+										"type": "select",
+                    "dataType": "string",
+                    "typeOptions": {
+                        "validValues": [
+                            {"value": "Normal"},
+                            {"value": "Full"}
+                        ]
+                    },
+                    "defaultValue": "Normal"
+                }
+            ]
+        }
+    ]
+}

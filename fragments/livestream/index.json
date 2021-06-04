@@ -1,0 +1,39 @@
+{
+	"fieldSets": [{
+		"fields": [{
+			"name": "width",
+			"label": "Breedte",
+			"description": "Breedte",
+			"type": "text",
+			"typeOptions": {
+				"placeholder": ""
+			},
+			"dataType": "string",
+			"defaultValue": "100%"
+		},
+			{
+				"name": "height",
+				"label": "Hoogte",
+				"description": "Hoogte",
+				"type": "text",
+				"typeOptions": {
+					"placeholder": ""
+				},
+				"dataType": "string",
+				"defaultValue": "300"
+			},
+			{
+				"name": "channel",
+				"label": "Channel",
+				"description": "Channel",
+				"type": "text",
+				"typeOptions": {
+					"placeholder": ""
+				},
+				"dataType": "string",
+				"defaultValue": ""
+			}
+		]
+	}]
+
+}

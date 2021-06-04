@@ -1,0 +1,13 @@
+<div class="number bg-${configuration.backgroundColor.cssClass} text-${configuration.textColor.cssClass} p-4 text-center my-3">
+  <svg class="lexicon-icon lexicon-icon-${configuration.icon}" role="presentation">
+		<use xlink:href="http://localhost:8080/o/admin-theme/images/clay/icons.svg#${configuration.icon}"></use>
+	</svg>
+	<h1 style="font-size: 2.5rem; font-weight: 600">
+		<strong>
+			<lfr-editable id="number" type="text">12</lfr-editable>
+		</strong>
+	</h1>
+	<div class="lead">
+		<lfr-editable id="aspect" type="text"></lfr-editable>
+	</div>
+</div>

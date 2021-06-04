@@ -1,0 +1,21 @@
+{
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "name": "color",
+                    "label": "Badge color",
+                    "type": "colorPalette",
+                    "dataType": "object"
+                },
+							{
+                    "name": "rounded",
+                    "label": "Rounded borders",
+                    "description": "",
+                    "type": "checkbox",
+                    "defaultValue": false
+                }
+            ]
+        }
+    ]
+}

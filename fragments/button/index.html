@@ -1,0 +1,24 @@
+[#switch configuration.size!]
+  [#case "Small"]
+    [#assign sizeClass = "btn-sm"]
+    [#break]
+  [#case "Large"]
+    [#assign sizeClass = "btn-lg"]
+    [#break]
+	[#default]
+    [#assign sizeClass = "btn-nm"]
+[/#switch]
+
+[#switch configuration.width!]
+  [#case "Full"]
+    [#assign widthClass = "w-100"]
+    [#break]
+	[#default]
+    [#assign widthClass = ""]
+[/#switch]
+
+<div class="component-button text-break">
+		<a class="btn ${sizeClass} btn-${configuration.backgroundColor!'primary'} ${widthClass} page-editor__editable" data-lfr-editable-id="link" data-lfr-editable-type="link" href="" id="link">
+		Go Somewhere
+	</a>
+</div>

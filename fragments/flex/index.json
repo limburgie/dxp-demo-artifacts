@@ -1,0 +1,16 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "name": "items",
+          "label": "Items",
+          "description": "Number of items",
+					"type": "text",
+          "dataType": "int",
+          "defaultValue": "2"
+        }
+      ]
+    }
+  ]
+}

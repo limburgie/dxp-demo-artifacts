@@ -1,0 +1,118 @@
+[#assign userService = serviceLocator.findService("com.liferay.portal.kernel.service.UserLocalService")]
+[#assign groupUsers = userService.getCompanyUsers(themeDisplay.companyId, -1, -1)]
+[#assign groupUsers = groupUsers?sort_by("fullName")]
+
+<ul class="who-is-who">
+    [#list groupUsers as user]
+        [#if user.status != 5 && user.screenName != "admin"]
+			[#assign job = user.jobTitle]
+			[#if !job?has_content]
+				[#assign job = languageUtil.get(locale, 'Employee')]
+			[/#if]
+			<li>
+				<div class="who-is-who__person">
+					<div class="who-is-who__profile">
+						<div class="who-is-who__image" style="background-image: url('${user.getPortraitURL(themeDisplay)}')">
+							<div class="who-is-who__image-border"></div>
+						</div>
+						<div>
+							<div class="who-is-who__name">${user.fullName}</div>
+							<div class="who-is-who__function">
+								${job}
+							</div>
+						</div>
+					</div>
+					[#if user.comments?has_content]
+					<div class="who-is-who__description">
+                        ${user.comments}
+					</div>
+					[/#if]
+				</div>
+				<div class="who-is-who__info who-is-who__info--minimum">
+					<div class="d-flex">
+						<div>[@icon "envelope-closed"/]</div>
+						<div><a href="mailto:${user.displayEmailAddress}">${user.displayEmailAddress}</a></div>
+					</div>
+					<table>
+                        [#if user.phones?has_content]
+							<tr>
+								<td>[@icon "phone"/]</td>
+								<td><a href="tel:${user.phones[0].number}">${user.phones[0].number}</a></td>
+							</tr>
+                    	[/#if]
+					</table>
+				</div>
+				<div class="who-is-who__info who-is-who__info--maximum">
+					<table>
+						<tr>
+							<td colspan="2" class="heading">${languageUtil.get(locale, 'details')}</td>
+						</tr>
+						<tr>
+							<td>[@icon "envelope-closed"/]</td>
+							<td><a href="mailto:${user.displayEmailAddress}">${user.displayEmailAddress}</a></td>
+						</tr>
+                        [#if user.phones?has_content]
+							<tr>
+								<td>[@icon "phone"/]</td>
+								<td><a href="tel:${user.phones[0].number}">${user.phones[0].number}</a></td>
+							</tr>
+                        [/#if]
+						
+						[#if user.expandoBridge.getAttribute("Location", false)?has_content]
+						<tr>
+							<td>[@icon "geolocation"/]</td>
+							<td>${user.expandoBridge.getAttribute("Location", false)}</td>
+						</tr>
+						[/#if]
+						[#if user.expandoBridge.getAttribute("Working Hours", false)?has_content]
+						<tr>
+							<td>[@icon "time"/]</td>
+							<td>${user.expandoBridge.getAttribute("Working Hours", false)}</td>
+						</tr>
+						[/#if]
+						<tr>
+							<td>
+								[@icon "users"/]
+							</td>
+							<td>
+								<div class="ms-teams">
+									[#if user.expandoBridge.getAttribute("Teams Active", false)!false]
+										[#assign teamsCss = "ms-steams__status--active"]
+									[#else]
+										[#assign teamsCss = "ms-steams__status--inactive"]
+									[/#if]
+									<span class="ms-steams__status ${teamsCss}"></span>
+									<a href="https://teams.microsoft.com/l/channel/intrablox" target="_blank">Open Microsoft Teams</a>
+								</div>
+							</td>
+						</tr>
+					</table>
+                    [#if user.groups?has_content]
+						<table>
+							<tr>
+								<td class="heading">${languageUtil.get(locale, 'groups')}</td>
+							</tr>
+                            [#list user.groups as group]
+                                [#if !group.guest]
+									<tr>
+										<td>${group.name}</td>
+									</tr>
+                                [/#if]
+                            [/#list]
+						</table>
+                    [/#if]
+				</div>
+				<div class="who-is-who__actions">
+					<button class="who-is-who__open">[@icon "plus"/]</button>
+					<button class="who-is-who__close">[@icon "hr"/]</button>
+				</div>
+			</li>
+        [/#if]
+    [/#list]
+</ul>
+
+[#macro icon key]
+	<svg class="lexicon-icon lexicon-icon-${key}" role="presentation">
+		<use xlink:href="http://localhost:8080/o/admin-theme/images/clay/icons.svg#${key}"></use>
+	</svg>	
+[/#macro]
